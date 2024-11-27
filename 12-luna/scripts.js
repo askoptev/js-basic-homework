@@ -10,6 +10,7 @@ const isValidCard = (card) => {
   }
   let arr = [...str];
   let lunaArray = arr.map((item, index) => {
+    item = Number(item);
     if ((index + 1) % 2 != 0) {
       item = item * 2;
       if (item > 9) {
