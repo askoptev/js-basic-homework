@@ -8,7 +8,7 @@ const isValidCard = (card) => {
   if (isNaN(Number(str))) {
     return false;
   }
-  let arr = Array.from(str, (item) => Number(item));
+  let arr = [...str];
   let lunaArray = arr.map((item, index) => {
     if ((index + 1) % 2 != 0) {
       item = item * 2;
