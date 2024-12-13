@@ -1,0 +1,41 @@
+.input {
+  font-size: 20px;
+  padding: 0 10px;
+  font-weight: 700;
+  height: 30px;
+  width: 100px;
+  margin: 20px 0 20px 0;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.operator {  
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;  
+  margin: 20px 10px;
+}
+
+.result {  
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.block {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+.button {
+  background-color: cadetblue;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  min-width: 50px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
