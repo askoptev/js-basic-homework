@@ -39,3 +39,11 @@
   font-weight: 700;
   cursor: pointer;
 }
+
+.button:hover {
+  background-color:rgb(60, 119, 120);
+}
+
+.button:active {
+  background-color: cadetblue;
+}
