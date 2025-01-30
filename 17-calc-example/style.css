@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #396586;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.calculator {
+  max-width: 480px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 15px;
+  border: 2px solid #d1d1d1;
+  background: #f3f7f9;
+  border-radius: 10px;
+  color: #396586;
+  font-size: 18px;
+  margin: 10px 0;
+  transition: border-color 0.3s;
+  width: calc(50% - 12px);
+}
+
+input:focus {
+  border-color: #396586;
+  outline: none;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  /* Центрирование кнопок */
+  gap: 10px;
+  /* Расстояние между кнопками */
+  margin-bottom: 20px;
+}
+
+button {
+  border-radius: 10px;
+  width: max-content;
+  /* Ширина кнопки */
+  padding: 12px 24px;
+  /* Высота кнопки */
+  font-size: 20px;
+  border: 2px solid #396586;
+  background: #f1f8fc;
+  color: #396586;
+  transition: background 0.3s, transform 0.3s;
+  cursor: pointer;
+  vertical-align: bottom;
+}
+
+button:hover {
+  background: #cce6f5;
+  /* Более привлекательный цвет при наведении */
+  transform: scale(1.1);
+  /* Увеличение при наведении */
+}
+
+.button-active {
+  background: #396586;
+  color: white;
+  border-color: #295a77;
+  /* Темнее при активном состоянии */
+}
+
+.answerText {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #396586;
+}
+
+.answer {
+  padding: 10px;
+  border: 2px solid #d1d1d1;
+  background: #f1f8fc;
+  border-radius: 10px;
+  font-size: 24px;
+  line-height: 32px;
+  min-height: 56px;
+  color: #396586;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+  border-color: red;
+}
